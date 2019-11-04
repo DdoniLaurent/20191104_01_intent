@@ -32,9 +32,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         phoneDialBtn.setOnClickListener {
-            var uri = Uri.parse("tel:01053194080") // 띄어쓰기하면 안됨.
+            var uri = Uri.parse("tel:01000000000") // 띄어쓰기하면 안됨.
             var intent = Intent(Intent.ACTION_DIAL, uri)
             startActivity(intent)
+        }
+
+        phoneCallBtn.setOnClickListener {
+//            var uri = Uri.parse("tel:01000000000")
+//            var intent = Intent(Intent.ACTION_CALL, uri)
+//            startActivity(intent)
         }
     }
 
