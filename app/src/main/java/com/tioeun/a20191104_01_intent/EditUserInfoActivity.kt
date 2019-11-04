@@ -23,4 +23,5 @@ class EditUserInfoActivity : AppCompatActivity() {
             finish()
         }
     }
+
 }
