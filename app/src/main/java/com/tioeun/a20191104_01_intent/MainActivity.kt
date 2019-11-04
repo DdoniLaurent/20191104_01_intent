@@ -49,6 +49,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("sms_body", "우리가 만든 앱입니다.")
             startActivity(intent)
         }
+        webLinkBtn.setOnClickListener {
+            var uri = Uri.parse("http://naver.com")
+            var intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
