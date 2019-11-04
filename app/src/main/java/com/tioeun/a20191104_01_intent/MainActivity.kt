@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         nameInputBtn.setOnClickListener {
             var intent = Intent(this, EditUserInfoActivity::class.java)
-            startActivity(intent)
+            startActivityForResult(intent, 1000)
         }
     }
 }
